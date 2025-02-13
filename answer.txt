@@ -1,0 +1,7 @@
+1. Config user.name and user.email for GLOBAL
+    git config --global user.name "PW - Thien"
+    git config --global user.email "thientt1006@gmail.com"
+
+2. Config user.name and user.email for specific folder
+    git config user.name "PW - Thien"
+    git config user.email "thientt1006@gmail.com"
