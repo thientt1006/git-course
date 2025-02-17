@@ -1,0 +1,38 @@
+Bài 1:
+    git init
+        - Khởi tạo 1 folder .git
+        - Đồng thời khởi tạo 3 working state: Working Directory, Staging Area, Repository
+
+    git add <file_name>
+        - Add 1 file có tên file_name từ vùng Working Directory vào vùng Staging Area
+
+    git add .
+        - Add toàn bộ file ở vùng Working Directory vào vùng Staging Area
+    
+    git commit -m "message"
+        - Tạo ra 1 commit với message là "message" và đưa vào vùng Local Repository để sẵn sàng push code lên Remote Repository
+
+
+
+Bài 2:
+a. Tạo 3 file: file1, file2, file3
+    - 3 file nằm ở Local Directory
+    - Chưa chạy câu lệnh "git init" nên chưa tạo folder .git => 3 file chưa nằm ở vùng Working Directory
+
+b. Chạy lệnh: git init
+    - 3 file nằm ở vùng Working Directory
+    - Sau khi chạy lệnh "git init", folder .git và 3 working state được tạo nên 3 file nằm ở vùng Working Directory
+
+c. Chạy lệnh: git commit -m "init project"
+	- 3 file nằm ở vùng Working Directory
+	- Hệ thống báo warning vì không có file nào ở vùng Staging Area để có thể tạo commit và đưa vào vùng Repository
+
+d. Chạy lệnh: git add file1
+	- file1 nằm ở vùng Staging Area, file2 và file3 vẫn nằm ở vùng Working Directory
+
+e. Chạy lệnh: git commit -m "add file1"
+	- file1 được đưa vào vùng Repository, file2 và file3 vẫn nằm ở vùng Working Directory
+
+f. Chạy lệnh: git add file
+	- file1 nằm ở vùng Repository, file2 và file3 vẫn nằm ở vùng Working Directory
+	- Hệ thống báo lỗi vì không tìm thấy file có lên là "file"
