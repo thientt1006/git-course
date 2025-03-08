@@ -1,0 +1,40 @@
+1. Cấu trúc DOM cơ bản của một trang web bao gồm các thẻ gì?
+     - Một element:
+        <option value="usa">United States</option>
+    - Trong đó:
+        <option> : thẻ/tag mở
+        </option> : thẻ/tag đóng
+        United States : text hiển thị
+        value : thuộc tính
+        "usa" : giá trị của thuộc tính
+    - Ngoài ra còn có thẻ/tag tự đóng
+        <img src="image.jpg" alt="Image description"/>
+
+2. Hãy mô tả cấu trúc html của 1 bảng (table)
+    - Thẻ table: hiển thị bảng dữ liệu.
+        - thead = table heading
+            - tr = table row = 1 dòng
+                - th: table heading: text in đậm
+        - tbody
+            - tr -> td = table data
+    - Ví dụ:
+        <table>
+            <tbody>
+                <tr>
+                    <th>Tên permission</th>
+                    <th>Trạng thái</th>
+                </tr>
+                <tr>
+                    <td>Location</td>
+                    <td id="locationPermission">Chưa cấp quyền</td>
+                </tr>
+                <tr>
+                    <td>Camera</td>
+                    <td id="cameraPermission">Chưa cấp quyền</td>
+                </tr>
+                <tr>
+                    <td>Microphone</td>
+                    <td id="microphonePermission">Chưa cấp quyền</td>
+                </tr>
+            </tbody>
+        </table>
